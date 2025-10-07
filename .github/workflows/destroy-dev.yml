@@ -13,13 +13,13 @@ env:
   TF_VAR_AWS_REGION: ${{ secrets.TF_VAR_AWS_REGION }}
   TF_VAR_NODE_APP_IMAGE: ${{ secrets.TF_VAR_NODE_APP_IMAGE }}
   TF_VAR_NODE_APP_HOST_NAME: ${{ secrets.TF_VAR_NODE_APP_HOST_NAME }}
-  TF_VAR_NODE_APP_USER_EMAIL: ${{ secrets.TF_VAR_NODE_APP_USER_EMAIL }}
+  TF_VAR_NODE_APP_EMAIL: ${{ secrets.TF_VAR_NODE_APP_EMAIL }}
   TF_VAR_NODE_APP_PASSWORD: ${{ secrets.TF_VAR_NODE_APP_PASSWORD }}
   TF_VAR_NODE_APP_SERVICE: ${{ secrets.TF_VAR_NODE_APP_SERVICE }}
-  TF_VAR_ENVIRONMENT: ${{ secrets.TF_VAR_ENVIRONMENT }}
-  TF_VAR_SERVER_NAME: ${{ secrets.TF_VAR_SERVER_NAME }}
-
-  
+  TF_VAR_AWS_ENV: ${{ secrets.TF_VAR_ENVIRONMENT }}
+  TF_VAR_AWS_SERVER_NAME: ${{ secrets.TF_VAR_SERVER_NAME }}
+  TF_VAR_AWS_KEY_PAIR_NAME: ${{ secrets.TF_VAR_AWS_KEY_PAIR_NAME }}
+  TF_VAR_AWS_SG_NAME: ${{ secrets.TF_VAR_AWS_SG_NAME }}
 jobs:
     terraform-plan-apply:
         runs-on: ubuntu-latest
