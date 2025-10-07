@@ -1,0 +1,23 @@
+services:
+  node-app:
+    image: ${NODE_APP_IMAGE}
+    container_name: "node-app"
+    ports:
+      - 3000:3000
+    environment:
+      - SERVICE=${SERVICE}
+      - USER_EMAIL=${USER_EMAIL}
+      - PASSWORD=${PASSWORD}
+
+  postgres:
+    image: postgres
+    container_name: postgres
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=Juande..10
+    volumes:
+      - postgres:/var/lib/postgresql 
+
+volumes:
+  postgres:
