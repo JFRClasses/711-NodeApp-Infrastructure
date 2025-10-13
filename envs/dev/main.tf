@@ -11,6 +11,7 @@ module "vm-linux-dev" {
   node_app_password = var.NODE_APP_PASSWORD
   node_app_image = var.NODE_APP_IMAGE
   node_app_service = var.NODE_APP_SERVICE
+  main_domain = var.MAIN_DOMAIN
 }
 
 output "aws_ip" {

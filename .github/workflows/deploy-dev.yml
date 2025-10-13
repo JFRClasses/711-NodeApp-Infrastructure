@@ -23,7 +23,7 @@ env:
   TF_VAR_AWS_SERVER_NAME: ${{ secrets.TF_VAR_SERVER_NAME }}
   TF_VAR_AWS_KEY_PAIR_NAME: ${{ secrets.TF_VAR_AWS_KEY_PAIR_NAME }}
   TF_VAR_AWS_SG_NAME: ${{ secrets.TF_VAR_AWS_SG_NAME }}
-
+  TF_VAR_MAIN_DOMAIN: ${{ secrets.TF_VAR_MAIN_DOMAIN }}
 jobs:
   terraform-plan:
     name: Terraform Plan

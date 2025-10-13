@@ -39,5 +39,8 @@ variable "aws_key_pair_name" {
 
 variable "aws_sg_name" {
   type = string
-  
+}
+
+variable "main_domain"{
+  type = string
 }

@@ -40,3 +40,7 @@ variable "AWS_KEY_PAIR_NAME" {
 variable "AWS_SG_NAME" {
   type = string
 }
+
+variable "MAIN_DOMAIN"{
+  type = string
+}
