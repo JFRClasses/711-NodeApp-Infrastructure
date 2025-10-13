@@ -1,13 +1,13 @@
 
 # Par de claves
 resource "aws_key_pair" "restaurant_keys" {
-  key_name = "${var.aws_key_pair_name} - ${var.aws_env}"
+  key_name = "${var.aws_key_pair_name}-${var.aws_env}"
   public_key = file("./keys/restaurant_key.pub")
 }
 
 # Security Groups
   resource "aws_security_group" "restaurant_sg" {
-    name     = "${var.aws_sg_name} - ${var.aws_env}"
+    name     = "${var.aws_sg_name}-${var.aws_env}"
   description = "Permitir acceso a traves de SSH"
 
   ingress {
