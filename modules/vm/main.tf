@@ -57,9 +57,9 @@ resource "aws_instance" "restaurant_app_instance" {
     inline = [ 
       "mkdir /home/ubuntu/containers",
       "mkdir /home/ubuntu/.aws",
-      "mkdir /volumes/nginx/certs",
-      "mkdir /volumes/nginx/vhostd",
-      "mkdir /volumes/nginx/html",
+      "mkdir -p /volumes/nginx/certs",
+      "mkdir -p /volumes/nginx/vhostd",
+      "mkdir -p /volumes/nginx/html",
       "sudo chmod 777 /volumes/nginx/certs",
       "sudo chmod 777 /volumes/nginx/vhostd",
       "sudo chmod 777 /volumes/nginx/html",
